@@ -2,6 +2,7 @@ require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash.each do |season,holiday|
+    if season: == spring 
   
   
 end
