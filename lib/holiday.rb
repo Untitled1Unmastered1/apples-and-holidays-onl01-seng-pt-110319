@@ -1,6 +1,13 @@
 require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
+   holiday_hash.each do |season , holiday|
+    if season == :spring
+      holiday.each do |occasion , supplies|
+        return "#{supplies.join("")}"
+end 
+end 
+end 
    # given that holiday_hash looks like this:
   # {
   #   :winter => {
@@ -18,13 +25,7 @@ def second_supply_for_fourth_of_july(holiday_hash)
   #   }
   # }
   # return the second element in the 4th of July array
-  holiday_hash.each do |season , holiday|
-    if season == :spring
-      holiday.each do |occasion , supplies|
-        return "#{supplies.join("")}"
-end 
-end 
-end 
+ 
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   # holiday_hash is identical to the one above
