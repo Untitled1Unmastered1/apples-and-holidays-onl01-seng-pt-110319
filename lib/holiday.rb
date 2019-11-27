@@ -52,7 +52,8 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].each  do |holidays, supplies|
   holiday_hash[:winter][holidays] = [supplies].each do |item|
     winter_supplies << item
-
+    winter_supplies.flatten!.uniq! 
+    
 end
 
 def all_supplies_in_holidays(holiday_hash)
