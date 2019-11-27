@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
       temp.collect! {|item| item.capitalize!}
        puts "  #{temp.join(" ")}: #{supplies.join(", ")}"
       end 
-    end 
+  end 
 end 
 
 def all_holidays_with_bbq(holiday_hash)
