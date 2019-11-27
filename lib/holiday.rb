@@ -1,13 +1,13 @@
 require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
-  holiday_hash.each do |season,holiday|
-    if season == :spring 
-      holiday.each do |occasion,supplies|
-        return "#{supplies.join("")}"
-      end 
-   end 
-end
+  # given that holiday_hash looks like this:	  holiday_hash.each do |season , holiday|
+  # {	    if season == :spring
+  #   :winter => {	      holiday.each do |occasion , supplies|
+  #     :christmas => ["Lights", "Wreath"],	        return "#{supplies.join("")}"
+  #     :new_years => ["Party Hats"]	      end
+  #   },	    end
+  #   :summer => {	  end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   # holiday_hash is identical to the one above
